@@ -12,11 +12,11 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Sandbox box = new Sandbox();
-            //int []A = { 4, 5, 7, 8, 4, 6 };
+            int[] A = { 4, 5, 7, 8, 4, 6 };
             int n = 7;
             //int [] result = box.ReturnNoDuplicates(A);
-            int result = box.FibonacciSequence(n);
-            int result2 = box.FindMissingNumber();
+            int result = box.FindLargestNumber(A);
+            int result2 = box.FindSmallestNumber(A);
             Console.WriteLine(result2);
             Console.WriteLine(result);
             Console.ReadLine();

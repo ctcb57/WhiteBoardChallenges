@@ -92,5 +92,28 @@ namespace ConsoleApp1.Properties
             }
             return missingNumber;
         }
+
+        //Find the largest and smallest numbers in a given array
+        public int FindLargestNumber(int [] array)
+        {
+            List<int> holder = new List<int>();
+            for(int i = 0; i < array.Length; i++)
+            {
+                holder.Add(array[i]);
+            }
+            int largeNumber = holder.Max();
+            return largeNumber;
+        }
+
+        public int FindSmallestNumber(int [] array)
+        {
+            List<int> holder = new List<int>();
+            for (int i = 0; i < array.Length; i++)
+            {
+                holder.Add(array[i]);
+            }
+            int smallNumber = holder.Min();
+            return smallNumber;
+        }
     }
 }
