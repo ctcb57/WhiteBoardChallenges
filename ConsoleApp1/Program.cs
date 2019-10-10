@@ -16,6 +16,8 @@ namespace ConsoleApp1
             int n = 7;
             //int [] result = box.ReturnNoDuplicates(A);
             int result = box.FibonacciSequence(n);
+            int result2 = box.FindMissingNumber();
+            Console.WriteLine(result2);
             Console.WriteLine(result);
             Console.ReadLine();
         }

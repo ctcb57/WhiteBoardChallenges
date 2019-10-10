@@ -61,5 +61,36 @@ namespace ConsoleApp1.Properties
             }
             return list[n];
         }
+
+        // Create method which returns missing number from array from 1 - 100
+        public int [] GenerateToOneHundred()
+        {
+            List<int> holder = new List<int>();
+            for(int i = 1; i <= 49; i++)
+            {
+                holder.Add(i);
+            }
+            for(int j = 51; j <= 100; j++)
+            {
+                holder.Add(j);
+            }
+            int[] result = holder.ToArray();
+            return result;
+        }
+
+        public int FindMissingNumber()
+        {
+            int missingNumber = 0; 
+            int[] array = GenerateToOneHundred();
+            for(int i = 1; i < array.Length; i++)
+            {
+                if(i != array[i - 1])
+                {
+                    missingNumber = array[i] - 1;
+                    break;
+                }
+            }
+            return missingNumber;
+        }
     }
 }
